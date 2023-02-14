@@ -1,6 +1,7 @@
 # Day 9 Project: The secret auction program
 
 import auction
+import os
 
 print(auction.logo)
 
@@ -20,6 +21,7 @@ while (endOfAuction == False):
     if (moreBidders == 'n'):
         endOfAuction = True
     else:
+        os.system('cls' if os.name == 'nt' else 'clear')
         auction()
 
 winner = ''
